@@ -1,0 +1,39 @@
+<!-- Question 3 (Medium): Styling a Nested To-Do List
+Problem: Create a nested ordered list (<ol>) for a project to-do list. The top-level items are "Phase 1" and "Phase 2". Under "Phase 1", create a nested unordered list (<ul>) with the tasks "Design Mockups" and "Create User Stories". Use inline CSS to:
+Change the main ordered list to use Roman numerals (list-style-type: upper-roman;) and a font-style of oblique.
+Make the top-level list items ("Phase 1", "Phase 2") bold (font-weight: bold;).
+Give the nested task items a background-color of lightyellow.
+Goal: A numbered list with Roman numerals and oblique text, where the main items are bold, and the sub-tasks under "Phase 1" have a yellow background. -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project to do list</title>
+    <style>
+        ol{
+            font-style: oblique;
+        }
+        ul{
+            font-weight: bold;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Project to do list</h1>
+    <ol type="I">
+        <li>Phase 1
+            <ul>
+                <li>Design Mockups</li>
+                <li>Create User Stories</li>
+            </ul>
+        </li>
+        <li>Phase 2</li>
+    </ol>
+</body>
+</html>

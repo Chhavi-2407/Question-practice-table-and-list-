@@ -1,0 +1,46 @@
+<!-- Question 4 (Hard): A Styled Class Schedule Table
+Problem: Create a 3x3 table for a class schedule. The header row should contain "Time", "Monday", and "Tuesday". The data rows should contain schedule information. Use inline CSS to:
+Give the table a width of 100% and a border-collapse: collapse;.
+Style the header cells (<th>) with a background-color of #4CAF50 (a shade of green) and a text color of white.
+Style the data cells (<td>) with text-align: center;.
+Make the background color of every second row (<tr>) #f2f2f2 (light gray) to create a "zebra stripe" effect for better readability.
+(No padding should be used).
+Goal: A full-width, professional-looking schedule table with a green header, centered text, and alternating row colors, with no extra spacing inside the cells.
+
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Class Schedule Table
+</title>
+</head>
+<body>
+    <h1>Weekly Class Schedule</h1>
+    <table style="width: 100%; border-collapse: collapse;">
+        <thead style="background-color: #4CAF50; color: white;">
+            <tr style="text-align: center;">
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="text-align: center;">
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Maths</td>
+                <td>History</td>
+            </tr>
+            <tr style="text-align: center; background-color: #f2f2f2 ;">
+                <td>10:00 AM - 11:00 AM</td>
+                <td>Science</td>
+                <td>English</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

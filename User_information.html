@@ -1,0 +1,41 @@
+<!-- Question 2 (Medium): Creating a Simple User Table
+Problem: Create a 2x3 HTML table to display user information. The first row should be a header with "First Name" and "Last Name". The next two rows should contain user data. Use inline CSS to:
+Give the entire table a border of 1px solid black and set border-collapse: collapse;.
+Give all table cells (<th> and <td>) a border of 1px solid black.
+Give the header cells (<th>) a background-color of #f2f2f2.
+(No padding should be used).
+Goal: A clean, compact, bordered table where the header row has a light gray background. -->
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information</title>
+</head>
+<body>
+    <table style="border: 1px solid black; border-collapse:collapse ;">
+        <caption>User Information</caption>
+        <thread style="background-color: #f2f2f2;">
+            <tr>
+                <th style="border: 1px  solid #000;">First Name</th>
+                <th style="border: 1px  solid #000;">Last Name</th>
+            </tr>
+        </thread>
+        <tbody>
+            <tr>
+                <td style="border: 1px  solid #000;">Tanmay</td>
+                <td style="border: 1px  solid #000;">Kumar</td>
+            </tr>
+            <tr>
+                <td style="border: 1px  solid #000;">Priya</td>
+                <td style="border: 1px  solid #000;">Sharma</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
